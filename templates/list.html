@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../css/style.css">
+<head>
+    <title>Все кандидаты</title>
+
+</head>
+<body>
+<h1> Все кандидаты </h1>
+
+{% for candidate in candidates_limit %}
+<p><a href="/candidates/{{ candidate.id }}">{{ candidate.name }}</a></p>
+{% endfor %}
+
+
+</body>
+</html>
+
